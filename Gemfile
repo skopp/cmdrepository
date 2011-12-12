@@ -39,6 +39,19 @@ group :test do
   gem 'shoulda-matchers'
 end
 
+group :development do
+  gem 'guard'
+  gem 'rb-inotify', :require => false
+  gem 'libnotify', :require => false
+  gem 'rb-fsevent', :require => false
+  gem 'rb-fchange', :require => false
+
+  gem 'guard-cucumber'
+  gem 'guard-spork'
+  gem 'guard-rspec'
+  gem 'guard-livereload'
+end
+
 group :test, :development do
   gem 'rspec-rails'
   gem 'spork', '~> 0.9.0.rc'
