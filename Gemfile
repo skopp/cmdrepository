@@ -27,13 +27,13 @@ group :development do
   gem 'rb-fsevent', :require => false
   gem 'rb-fchange', :require => false
 
-  gem 'guard-cucumber'
+  gem 'guard-cucumber', :require => false
   gem 'guard-spork'
   gem 'guard-rspec'
   gem 'guard-livereload'
 end
 
 group :test, :development do
-  gem 'rspec-rails'
-  gem 'spork', '~> 0.9.0.rc'
+  gem 'rspec-rails', :require => false
+  gem 'spork', '~> 0.9.0.rc', :require => false
 end
